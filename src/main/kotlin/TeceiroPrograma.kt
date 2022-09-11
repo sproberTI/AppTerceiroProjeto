@@ -1,25 +1,23 @@
-/**
- * Este programa responderá a seguinte questão:
- * Como Calcular quantos anos de vida a pessoa tem?
- */
-
 fun main() {
-
-    //Utlizar CamelCase
-    //Dados de entrada
 
     var anoDeNascimento = 2011
     var anoAtual = 2022
+    imprimirResultados(anoDeNascimento,anoAtual)
 
-    //Processamento
+}
+
+fun calcularAnosDeVida(anoDeNascimento: Int, anoAtual: Int): Int {
+
     var anosDeVida = anoAtual - anoDeNascimento
+    return anosDeVida
+}
 
-    //Dados de Saída /Resultado
+fun imprimirResultados(anoDeNascimento: Int, anoAtual: Int) {
 
     println("* Como Calcular quantos anos de vida a pessoa tem?")
     println("- Ano de Nascimento: $anoDeNascimento")
     println("- Ano Atual........: $anoAtual")
-    println("- Resultado........: $anosDeVida")
-    println("  Você tem $anosDeVida de vida.")
+    println("- Resultado........: ${calcularAnosDeVida(anoDeNascimento, anoAtual)}")
+    println("  Você tem ${calcularAnosDeVida(anoDeNascimento, anoAtual)} de vida.")
 
 }
