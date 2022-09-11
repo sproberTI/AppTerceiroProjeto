@@ -7,7 +7,8 @@ fun main() {
 
     //Utlizar CamelCase
     //Dados de entrada
-    var anoDeNascimento = 1981
+
+    var anoDeNascimento = 2011
     var anoAtual = 2022
 
     //Processamento
@@ -20,7 +21,5 @@ fun main() {
     println("- Ano Atual........: $anoAtual")
     println("- Resultado........: $anosDeVida")
     println("  Você tem $anosDeVida de vida.")
-
-
 
 }
